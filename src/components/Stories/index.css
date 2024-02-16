@@ -1,0 +1,13 @@
+.slider-container {
+  height: 15vh;
+  margin-bottom: 20px;
+}
+.slider-container {
+  list-style-type: none;
+}
+.loader-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

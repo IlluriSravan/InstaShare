@@ -1,0 +1,83 @@
+.header-large {
+  display: none;
+}
+.header-small {
+  display: flex;
+  flex-direction: row;
+}
+.header-left-large {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+.links1 {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+}
+.links {
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+}
+.logout-button {
+  background-color: blue;
+  color: white;
+  height: 30px;
+  align-self: center;
+  border-radius: 6px;
+}
+.ham-button {
+  background-color: transparent;
+  border: none;
+}
+.header-right-small {
+  margin-left: auto;
+  align-self: center;
+}
+.Menuu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-right-large {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  justify-content: space-around;
+
+  align-items: center;
+}
+.header-left-small {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+.heading {
+  margin-right: 10px;
+}
+@media (min-width: 760px) {
+  .header-small {
+    display: none;
+  }
+
+  .header-large {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.mobile-input {
+  height: 20px;
+  align-self: center;
+  margin-left: 50px;
+}
+.header-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}

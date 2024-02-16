@@ -1,0 +1,57 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.post-item {
+  margin-top: 20px;
+  line-height: 0.2;
+}
+.post-top {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.profile-pic-post {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+  align-self: center;
+  margin-left: 10px;
+}
+.post-image {
+  height: 60vh;
+  width: 100%;
+  margin: 10px;
+}
+.options-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+}
+.button-options-post {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
+}
+.comment-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.comment-username {
+  font-weight: bold;
+  margin-right: 9px;
+}
+.time-post {
+  color: gray;
+}

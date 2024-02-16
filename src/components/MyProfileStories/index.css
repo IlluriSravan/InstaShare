@@ -1,0 +1,9 @@
+.profile-story-item {
+  margin-right: 20px;
+}
+.profile-story-img {
+  height: 12vh;
+  width: 8vw;
+  border-radius: 50%;
+  align-self: center;
+}

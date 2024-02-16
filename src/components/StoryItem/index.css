@@ -1,0 +1,12 @@
+.story-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.story-img {
+  height: 12vh;
+  width: 8vw;
+  border-radius: 50%;
+  align-self: center;
+}
