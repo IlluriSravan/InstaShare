@@ -19,10 +19,16 @@ const PostItem = props => {
     comments,
     createdAt,
   } = details
+  const [likes, setLikesCount] = useState(likesCount)
   const {imageUrl, caption} = postDetails
   const onPostLike = () => {
     postLike(postId, likeStatus)
     setLiked(prev => !prev)
+    if (likeStatus === true) {
+      setLikesCount(pre => pre + 1)
+    } else {
+      setLikesCount(pre => pre - 1)
+    }
   }
   return (
     <li className="post-item">
@@ -38,7 +44,7 @@ const PostItem = props => {
           </Link>
         </div>
         <img src={imageUrl} className="post-image" alt="post" />
-        <p>{caption}</p>
+        <p className="caption-post">{caption}</p>
         <div className="options-post">
           {likeStatus ? (
             <button
@@ -78,8 +84,8 @@ const PostItem = props => {
             <BiShareAlt />
           </button>
         </div>
-        <p>{likesCount} likes</p>
-        <p className="caption-post">{caption}</p>
+        <p>{likes} likes</p>
+
         <div className="comment-post">
           <p className="comment-username">{comments[0].userName}</p>
           <p>{comments[0].comment}</p>
