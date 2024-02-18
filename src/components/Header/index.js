@@ -18,7 +18,9 @@ class Header extends Component {
 
   onSearch = () => {
     const {searchInput} = this.state
+    console.log('HEAD', searchInput)
     const {onSearchChange} = this.props
+    console.log('ONSEa')
     onSearchChange(searchInput)
   }
 
@@ -123,12 +125,18 @@ class Header extends Component {
         <div className="second">
           {isShowMenu && (
             <div className="Menuu">
-              <Link to="/">
-                <h1 className="heading">Home</h1>
-              </Link>
-              <Link to="/my-profile">
-                <h1 className="heading">Profile</h1>
-              </Link>
+              <ul>
+                <li>
+                  <Link to="/">
+                    <h1 className="heading">Home</h1>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/my-profile">
+                    <h1 className="heading">Profile</h1>
+                  </Link>
+                </li>
+              </ul>
 
               <button
                 className="logout-button"
