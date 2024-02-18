@@ -10,15 +10,21 @@ const Home = props => {
   const [searchInput, setSearchInput] = useState('')
   const onSearchChange = search => {
     setSearch(true)
+
     setSearchInput(search)
   }
   return (
     <>
       <Header onSearchChange={onSearchChange} />
       <main className="home-container">
-        <Stories />
-        <br className="line" />
-        {isSearch ? <Search search={searchInput} /> : <Posts />}
+        {isSearch ? (
+          <Search search={searchInput} />
+        ) : (
+          <>
+            <Stories />
+            <Posts />
+          </>
+        )}
       </main>
     </>
   )
