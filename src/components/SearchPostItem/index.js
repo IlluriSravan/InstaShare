@@ -38,7 +38,7 @@ const SearchPostItem = props => {
           </Link>
         </div>
         <img src={imageUrl} className="post-image" alt="post" />
-        <p>{caption}</p>
+        <p className="caption-post">{caption}</p>
         <div className="options-post">
           {likeStatus ? (
             <button
@@ -79,7 +79,7 @@ const SearchPostItem = props => {
           </button>
         </div>
         <p>{likesCount} likes</p>
-        <p className="caption-post">{caption}</p>
+
         <div className="comment-post">
           <span className="comment-username">{comments[0].userName}</span>
           <p>{comments[0].comment}</p>
